@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Chart 1</title>
+  </head>
+  <body>
+    <div id="page">
+      <!-- HEADER -->
+      <header>
+        <h1>Cryptocurrency</h1>
+        <h2>
+          Bitcoin (USD) /
+          <span class="dark-font"
+            >powered by
+            <a target="_blank" href="https://www.coindesk.com/price/bitcoin"
+              >coindesk</a
+            ></span
+          >
+        </h2>
+      </header>
+
+      <!-- SVG -->
+      <div class="svg-container"></div>
+      <!-- <svg></svg> -->
+
+      <!-- INFORMATION BAR -->
+      <section id="information">
+        <div class="section-1">
+          <h3>
+            <span class="message">Convert Currency</span> /
+            <span class="dark-font">Convert</span>
+          </h3>
+          <div class="conversion">
+            <span class="conversion-value"
+              ><input class="converting-value" type="number" placeholder="00"
+            /></span>
+            <span class="custom-dropdown drop1">
+              <select id="currency-conversion1">
+                <option selected="selected">- - -</option>
+              </select>
+            </span>
+            <span class="arrow-right"
+              ><i class="fas fa-angle-double-right"></i
+            ></span>
+            <span class="arrow-down"
+              ><i class="fas fa-angle-double-down"></i
+            ></span>
+            <span class="custom-dropdown drop2">
+              <select id="currency-conversion2">
+                <option selected="selected">- - -</option>
+              </select>
+            </span>
+            <span class="conversion-result">
+              <input
+                type="number"
+                class="converting-result"
+                placeholder="00"
+                disabled
+              />
+            </span>
+          </div>
+        </div>
+        <div class="section-2">
+          <h3>
+            <span class="name">Current Rate</span> /
+            <span class="dark-font">Bitcoin</span>
+          </h3>
+          <ul>
+            <li class="amount"></li>
+            <!-- <li class="name"></li> -->
+            <li>
+              <span class="custom-dropdown"
+                ><select id="currency-selection">
+                  <option selected="selected">- - -</option>
+                </select></span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- D3 JS -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
